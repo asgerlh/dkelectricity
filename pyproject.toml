@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "dkelectricity"
+version = "0.0.1"
+authors = [
+  { name="Asger L. Hansen", email="asger.eh@gmail.com" },
+]
+description = "Get electricity information from eloverblik.dk and energidataservice.dk"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/asgelh/dkelectricity"
+Issues = "https://github.com/asgelh/dkelectricity/issues"
