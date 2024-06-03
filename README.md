@@ -18,7 +18,7 @@ token = 'Your very long token'
 el = DKElectricity(token)
 
 # Dates of interest
-to_data = datetime.today()
+to_date = datetime.today()
 from_date = to_date + timedelta(weeks=-1)
 
 # Get prices
@@ -29,7 +29,7 @@ consumption = el.get_consumption(from_date, to_date)
 
 # Plot it
 prices.plot(title=el.address, ylabel='Price [DKK]')
-consumption.plot(title=el.address, ylabel='Consumption [kW]')
+consumption.plot(title=el.address, ylabel='Consumption [kWh/h]')
 ```
 
 For more examples, see [notebooks](notebooks).
